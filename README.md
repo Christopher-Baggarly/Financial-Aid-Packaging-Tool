@@ -44,7 +44,11 @@ Each packet contains a one-page regulatory cover sheet, an optional two-page rep
 **Tech Stack**
 
 Python 3.10+ — runtime
+
 openpyxl — Excel input reading (the institutional packaging workbook)
+
 reportlab — PDF cover sheet generation with regulatory callouts, ledger tables, and amortization modeling
+
 pypdf — PDF merging (cover sheet + selected institutional flyers)
+
 config-driven — no hardcoded paths, school names, or branding colors in source code
