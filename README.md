@@ -34,7 +34,9 @@ RAP (Repayment Assistance Plan) — 2024-25 federal income-driven repayment fram
 Three test packets are included in samples/:
 
 _Portfolio, Test FA Info.pdf_ — MSMA clock-hour program, two payment periods, full Pell + Sub + Unsub loan schedule, $520 estimated credit balance.
+
 _Portfolio, Test B FA Info.pdf_ — Culinary Diploma quarter program, four quarters with Q4 anticipation, Pell + Sub + Unsub + Parent PLUS, $301 estimated program credit balance after full 4-quarter projection.
+
 _Portfolio, Test C FA Info.pdf_ — HVAC clock-hour program with Chapter 33 VA benefits. Tuition certified to the VA, Pell applied to ledger, zero loan debt offered.
 
 Each packet contains a one-page regulatory cover sheet, an optional two-page repayment modeling page when loan components exist, and the selected institutional flyers (Dependent Student, VA Student, Scholarships, Loan Counseling, IonTuition) merged into one PDF ready for the student folder.
