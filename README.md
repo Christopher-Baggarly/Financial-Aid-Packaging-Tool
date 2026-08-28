@@ -31,7 +31,7 @@ Higher Education Act § 455 — Pell Grant maximum award and COD reporting
 RAP (Repayment Assistance Plan) — 2024-25 federal income-driven repayment framework
 
 **Sample Output**
-Three test packets are included in samples/:
+Three test packets are included:
 
 _Portfolio, Test FA Info.pdf_ — MSMA clock-hour program, two payment periods, full Pell + Sub + Unsub loan schedule, $520 estimated credit balance.
 
