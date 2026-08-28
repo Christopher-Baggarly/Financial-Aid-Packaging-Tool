@@ -1,0 +1,50 @@
+{
+  "institution": {
+    "name": "Sample Career College",
+    "short_name": "SCC",
+    "city": "Sample City",
+    "state": "GA",
+    "primary_color_hex": "#002D62",
+    "accent_color_hex": "#F4A261",
+    "phone": "(555) 555-0100",
+    "website": "https://example.edu",
+    "contact_email": "financialaid@example.edu",
+    "accounts_manager_name": "Sample Accounts Manager",
+    "accounts_manager_phone": "(555) 555-0101"
+  },
+  "paths": {
+    "input_excel": "./input/Macon_Campus_Package_Database.xlsx",
+    "flyers_directory": "./flyers",
+    "output_root": "./output/FA_Info_Packets"
+  },
+  "flyer_map": {
+    "Dependent Student": "Dependent_Plus_Flyer.pdf",
+    "Student Loans": "Student_Loans_Flyer.pdf",
+    "VA Student": "VA_Flyer.pdf",
+    "Scholarship Flyer": "Scholarships_Flyer.pdf",
+    "Helms GFS App": "General_Fund_Scholarship_Application.pdf",
+    "ION Tuition": "IonTuition_Flyer.pdf"
+  },
+  "program_metadata": {
+    "default_student_interest_rate": 0.0652,
+    "plus_interest_rate_spread": 0.0255,
+    "origination_fee_student_loans": 0.01057,
+    "origination_fee_parent_plus": 0.04228,
+    "standard_repayment_term_months": 120,
+    "rap_minimum_payment": 10.00,
+    "credit_balance_refund_days": 14,
+    "first_borrower_disbursement_delay_days": 30,
+    "clock_hour_policies": {
+      "HVAC": {
+        "total_hours": 880,
+        "second_disbursement_threshold": "440 clock hours and 22 weeks",
+        "quarter_split_default": [2, 2]
+      },
+      "MSMA": {
+        "total_hours": 891,
+        "second_disbursement_threshold": "445.5 clock hours and 22 weeks",
+        "quarter_split_default": [2, 2]
+      }
+    }
+  }
+}
