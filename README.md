@@ -52,3 +52,56 @@ reportlab — PDF cover sheet generation with regulatory callouts, ledger tables
 pypdf — PDF merging (cover sheet + selected institutional flyers)
 
 config-driven — no hardcoded paths, school names, or branding colors in source code
+
+**Repository Layout**
+.
+├── README.md
+├── requirements.txt
+├── config/
+│   └── institutional.json          # School identity, branding, fee rates, thresholds
+├── generate_package.py             # Clock-hour program packager
+├── generate_package_quarter.py     # Quarter-hour program packager
+├── data/
+│   ├── sample_student.xlsx         # Synthetic input workbook (FERPA-safe)
+│   └── sample_student_quarter.xlsx # Synthetic input workbook (FERPA-safe)
+├── flyers/                         # Selected informational flyers (PDFs)
+├── samples/                        # Pre-generated sample output PDFs
+└── examples/
+    └── run_demo.py                 # End-to-end walkthrough script
+
+
+**Quick Start**
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Verify config and sample data are in place
+ls config/institutional.json
+ls data/sample_student.xlsx
+
+# 3. Generate a clock-hour packet
+python generate_package.py
+
+# 4. Generate a quarter-program packet
+python generate_package_quarter.py
+
+# 5. Output lands in ./output/FA_Info_Packets/<LastName>, <FirstName> FA Info/<LastName>, <FirstName> 
+
+To swap to a different institution, edit config/institutional.json only. No code changes required.
+
+
+**What This Engine Does Not Do**
+
+This engine automates packaging math and disclosure delivery. It does not:
+
+-Originate or transmit COD records to the Department of Education
+-Replace PowerFAIDS, Banner, or other SIS systems of record
+-Generate ISIRs or perform federal needs analysis
+-Auto-award FSEOG (institutional policy decisions remain with the FA Director)
+-The architectural decision was to automate the high-volume, error-prone calculation and disclosure work, and leave the policy judgment calls to humans.
+
+**Author**
+
+Built by Christopher Baggarly — Financial Aid administration with hands-on responsibility for Title IV packaging, COD reconciliation, and student-facing disclosure delivery. Engineered to solve a specific pain point (manual packet assembly eating staff hours) while preserving the federal compliance floor that an auditor would check.
+
+
+
